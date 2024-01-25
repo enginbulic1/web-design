@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherApp Contact</title>
+
+    <link rel="stylesheet" href="contact.css">
+
+
+</head>
+<body>
+
+    <!-- HEADER -->
+        <div class="header">
+            <div class="img-div">
+                <img src="img/logo.png">
+                <h3>Weather<span>App</span></h3>
+            </div>
+    
+                <ul>
+                    <li><a href="home_page.html">Homepage</a></li>
+                    <li><a href="search.html">Search</a></li>
+                    <li><a href="log_in.html">Log In</a></li>
+                    <li><a href="sign_up.html">Sign Up</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Page 6</a></li>
+                </ul>
+    
+                <button id="menuButton" onclick="mobileMenu()">MENU</button>
+        </div>
+    
+        <div class="pomocni"></div>
+    <!-- HEADER -->
+
+    <div class="forma">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <p id="getintouch">GET IN TOUCH</p>
+                        <h3>Request your problem:</h3> 
+                        <h3 style="color: blue; font-weight: bold;">We will love to help you!</h3>
+
+                        <p id="phone">PHONE CONTACTS</p>
+                        <p>Mobile: (+100) 66 123 456 <br> Hotline: 800 800</p>
+
+                        <p id="email">EMAIL CONTACTS</p>
+                        <p>info@gmail.com <br> help@gmail.com <br> emergency@gmail.com</p>
+                    </div>
+
+                    <div class="col-md-8">
+                        <div class="overlay_unutra">
+                            
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label for="poruka">YOUR MESSAGE: </label>
+                                    <textarea name="poruka" id="poruka" cols="90" rows="3"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="korisnicko_ime">USERNAME:</label>
+                                    <input type="text" id="korisnicko_ime" name="korisnicko_ime">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email">E-MAIL:</label>
+                                    <input type="text" id="email" name="email">
+                                </div>
+                            </div>
+
+                            <!-- <div class="row imePrezime">
+                                <div class="col-md-6">
+                                    <label for="ime_prezime">YOUR NAME:</label>
+                                    <input type="text" id="ime_prezime" name="ime_prezime">
+                                </div>    
+                                <div class="col-md-6">
+                                    <label for="">SEND: </label>
+                                    <button id="message-btn">MESSAGE</button>
+                                </div>
+                            </div> -->
+                            <div class="row imePrezime">
+                                <div class="col-md-12">
+                                    <label for=""></label>
+                                    <button id="message-btn">SEND MESSAGE</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <div class="footer-content">
+            <img src="img/copyright.png">
+            2023 WeatherApp. All rights reserved.
+        </div>
+        <div class="footer-images">
+            <a href="https://www.instagram.com/"><img src="img/instagram.png"></a>
+            <a href="https://www.facebook.com/"><img src="img/facebook.png"></a>
+            <a href="https://www.youtube.com/"><img src="img/youtube.png"></a>
+        </div>
+    </div>
+
+
+    <div id="customAlert" class="custom-modal">
+        <div class="custom-modal-content">
+            <div class="top">
+                <img src="img/close.png" class="custom-modal-close" onclick="closeCustomAlert()">
+            </div>
+            <div class="bottom">
+                <p id="customAlertMessage"></p>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="contact.js"></script>
+    
+</body>
+</html>
